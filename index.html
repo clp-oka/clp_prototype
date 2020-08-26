@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<!-- JavaScriptを使用する場合 --><!-- jQuery、Popper.js、Bootstrap.jsの順番で読み込みます（下記はbundle版を使用） -->
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/imageMapResizer.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="main.js"></script>
+	<title>CLP_Prototype</title>
+
+</head>
+<body>
+
+<div class="container centered mt-5">
+<h1>中央線の暮らし</h1>
+  <div class="container">
+	<img src="photos\線路1.png" usemap="#image-map" class="img-fluid">
+	<map name="image-map"> <!---https://www.image-map.net/-->
+    	<area  class="stn_selector" alt="higashikoganei" href="#" title="higashikoganei" coords="106,19,112,72,108,93,232,116,246,81,248,50,180,25" shape="poly">
+    	<area  class="stn_selector" alt="musashisakai" href="#" title="musashisakai" coords="495,64,474,120,590,135,604,114,592,73" shape="poly">
+    	<area  class="stn_selector" alt="mitaka" href="#" title="mitaka" coords="717,79,707,116,728,141,843,131,851,70,730,70" shape="poly">
+    	<area  class="stn_selector" alt="kichijoji" href="#" title="kichijoji" coords="1042,68,1016,89,1016,128,1127,139,1149,124,1135,72" shape="poly">
+	</map>
+ </div>
+ 
+ 
+<!--<div class="row"> -->
+<!--	<div class="col-lg-4"> -->
+        <div class="card mov_pane" style="display: none;" id="higashikoganei">
+          <video class="card-img-top" src="videos\東小金井.mov" controls ></video>
+          <div class="card-body">
+            <h4 class="card-title">東小金井</h4>
+            <p class="card-text">東小金井の動画です。</p>
+            <a href="#" class="btn btn-primary btn_detail">詳細を見る</a>
+            <div class="container mt-5 detail">東小金井は、自然あふれる住みよい街です。</div>
+          </div>
+        </div>
+<!--      </div> -->
+<!--      <div class="col-lg-4"> -->
+        <div class="card mov_pane" style="display: none;" id="musashisakai">
+          <video class="card-img-top" src="videos\武蔵境.mov" controls ></video>
+          <div class="card-body">
+            <h4 class="card-title">武蔵境</h4>
+            <p class="card-text">武蔵境の動画です。</p>
+            <a href="#" class="btn btn-primary btn_detail">詳細を見る</a>
+            <div class="container mt-5 detail">武蔵境は、駅周辺が便利で大学も点在しています。</div>
+          </div>
+        </div>
+<!--      </div> -->
+<!--      <div class="col-lg-4"> -->
+        <div class="card mov_pane" style="display: none;" id="mitaka">
+          <video class="card-img-top" src="videos\東小金井.mov" controls ></video>
+          <div class="card-body">
+            <h4 class="card-title">三鷹</h4>
+            <p class="card-text">三鷹の動画です。</p>
+            <a href="#" class="btn btn-primary btn_detail">詳細を見る</a>
+            <div class="container mt-5 detail">三鷹は、松屋の街です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--</div> -->
+<!--</div> -->
+
+
+
+</body>
+</html>
